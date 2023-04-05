@@ -1,9 +1,9 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: ['src/api/handler.ts'],
   splitting: false,
-  sourcemap: true,
+  sourcemap: false,
   clean: true,
-  outDir: './api',
+  outDir: './dist/api',
 });
