@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/index.ts",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "is-ci || husky install",
     "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,7 @@
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.37.0",
     "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
     "tsup": "^6.7.0",
     "typescript": "^5.0.3"
   },
