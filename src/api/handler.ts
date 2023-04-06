@@ -9,6 +9,6 @@ export default function handler(
     body: request.body,
     query: request.query,
     cookies: request.cookies,
-    branch: Foobar('debug/config_a')
+    branch: Foobar('debug/config_b')
   });
 }
