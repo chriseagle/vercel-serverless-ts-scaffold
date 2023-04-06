@@ -9,6 +9,6 @@ export default function handler(
     body: request.body,
     query: request.query,
     cookies: request.cookies,
-    foobar: Foobar('uppercase')
+    branch: Foobar('debug/config_a')
   });
 }
