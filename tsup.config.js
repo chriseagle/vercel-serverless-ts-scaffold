@@ -7,7 +7,7 @@ export default defineConfig({
   clean: true,
   outDir: './api',
   format: 'esm',
-  minify: true,
+  minify: false,
   bundle: true,
   platform: 'node',
 });
