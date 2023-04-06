@@ -5,7 +5,7 @@ export default defineConfig({
   splitting: false,
   sourcemap: false,
   clean: true,
-  outDir: './dist/api',
+  outDir: './deploy/api',
   format: 'esm',
   minify: false,
   bundle: true,
