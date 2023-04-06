@@ -1,4 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { Foobar } from '../services/foobar';
 export default function handler(
   request: VercelRequest,
   response: VercelResponse
@@ -7,5 +8,6 @@ export default function handler(
     body: request.body,
     query: request.query,
     cookies: request.cookies,
+    foobar: Foobar('hello world this should be in uppercase')
   });
 }
