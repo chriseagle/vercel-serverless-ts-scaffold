@@ -9,6 +9,6 @@ export default function handler(
     body: request.body,
     query: request.query,
     cookies: request.cookies,
-    foobar: Foobar('hello world this should be in uppercase')
+    foobar: Foobar('uppercase')
   });
 }
