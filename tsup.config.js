@@ -5,5 +5,5 @@ export default defineConfig({
   splitting: false,
   sourcemap: false,
   clean: true,
-  outDir: './dist/api',
+  outDir: './api',
 });
