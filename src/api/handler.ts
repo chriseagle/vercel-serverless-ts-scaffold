@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { Foobar } from '../services/foobar';
+import { Foobar } from '../services/foobar.js';
+
 export default function handler(
   request: VercelRequest,
   response: VercelResponse
