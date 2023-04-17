@@ -1,10 +1,13 @@
 .husky
+.git
 .eslintignore
 .eslintrc.json
 .gitignore
 .vercelignore
+.vscode
 package.json
 packge-lock.json
 README.md
 tsconfig.json
 tsup.config.js
+src
