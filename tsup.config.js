@@ -1,11 +1,11 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['./src/api/handler.ts'],
+  entry: ['src/api/handler.ts'],
   splitting: false,
   sourcemap: false,
   clean: true,
-  outDir: './dist/api',
+  outDir: 'api',
   format: 'esm',
   minify: false,
   bundle: true,
