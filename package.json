@@ -8,6 +8,7 @@
     "prepare": "is-ci || husky install",
     "pre-commit": "node precommit.js",
     "build": "tsup",
+    "vercel-build": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
