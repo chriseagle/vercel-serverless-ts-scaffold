@@ -7,3 +7,7 @@ Due a Vercel deployment issue, this repo now uses Husky to build as part of the 
 Run `npm install` and `npm prepare` to setup the project.
 
 When commiting you will be prompted to build the app ready for deployment. Built files will be automatically added to the commit. 
+
+### Running Locally
+
+Requires Vercel CLI globally installed,and `vercel dev` from root will provide a local dev server.
