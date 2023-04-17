@@ -1,5 +1,6 @@
 import inquirer from 'inquirer';
 import { exec } from 'child_process';
+
 inquirer
   .prompt([
     {
@@ -10,15 +11,16 @@ inquirer
 			choices: ['Yes', 'No'],
 		},
   ]).then((answers) => {
-		console.log('answers', answers);
     if(answers.runBuild === 'Yes') {
-			exec('npm run build');
+			exec('npm run build', {}, function() {
+				console.log('Build complete...');
+				console.log('Adding built files to the commit....');
+				exec('git add api/.', {}, function(){
+					console.log('Complete');
+				});
+			});
 		}
   })
   .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
+		console.error(error.message);
   });
