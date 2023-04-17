@@ -3,7 +3,6 @@
 .eslintignore
 .eslintrc.json
 .gitignore
-.vercelignore
 .vscode
 package.json
 packge-lock.json
